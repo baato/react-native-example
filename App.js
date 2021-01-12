@@ -54,7 +54,7 @@ export default class App extends Component {
       <View style={styles.page}>
         <View style={styles.container}>
           <MapboxGL.MapView
-            styleURL="https://api.baato.io/api/v1/styles/breeze?key=bpk.TqpOIK5KflKR_zEI0ONEVdCZmwmfMye9i67nAjsGlMgQ"
+            styleURL="https://api.baato.io/api/v1/styles/breeze?key=YOU_BAATO_ACCESS_TOKEN_HERE"
             style={styles.map}
             logoEnabled={false}
             attributionEnabled={false}
