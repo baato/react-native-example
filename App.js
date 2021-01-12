@@ -54,7 +54,7 @@ export default class App extends Component {
       <View style={styles.page}>
         <View style={styles.container}>
           <MapboxGL.MapView
-            styleURL="https://api.baato.io/api/v1/styles/breeze?key=YOUR_BAATO_ACCESS_TOKEN"
+            styleURL="https://api.baato.io/api/v1/styles/breeze?key=bpk.TqpOIK5KflKR_zEI0ONEVdCZmwmfMye9i67nAjsGlMgQ"
             style={styles.map}
             logoEnabled={false}
             attributionEnabled={false}
@@ -65,17 +65,9 @@ export default class App extends Component {
             />
           </MapboxGL.MapView>
           <TouchableOpacity
-            onPress={() =>
-              Linking.canOpenURL("https://baato.io")
-                .then((supported) => {
-                  if (!supported) {
-                    console.log("Can't handle url: " + "https://baato.io");
-                  } else {
-                    return Linking.openURL("https://baato.io");
-                  }
-                })
-                .catch((err) => console.error("An error occurred", err))
-            }
+            onPress={() => {
+              Linking.openURL("https://baato.io");
+            }}
             style={styles.absolute}
           >
             <Image
