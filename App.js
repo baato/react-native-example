@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import MapboxGL from "@react-native-mapbox-gl/maps";
 
-MapboxGL.setAccessToken("<DUMMY_TOKEN>");
+MapboxGL.setAccessToken("..."); // Mapbox needs this line, you don't need a mapbox token.
 
 const styles = StyleSheet.create({
   page: {
@@ -54,7 +54,7 @@ export default class App extends Component {
       <View style={styles.page}>
         <View style={styles.container}>
           <MapboxGL.MapView
-            styleURL="https://api.baato.io/api/v1/styles/breeze?key=bpk.P2eVWKZSIcwoNFhQpEqVULZ5U479mRI_fetWlKTRXmu9"
+            styleURL="https://api.baato.io/api/v1/styles/breeze?key=YOUR_BAATO_ACCESS_TOKEN"
             style={styles.map}
             logoEnabled={false}
             attributionEnabled={false}
